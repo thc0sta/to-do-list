@@ -1,16 +1,83 @@
-# React + Vite
+# 📝 To-do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Uma aplicação de lista de tarefas desenvolvida com **React** e **Vite**, permitindo adicionar, concluir e remover tarefas de forma simples e intuitiva.
 
-Currently, two official plugins are available:
+## 🚀 Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **Aplicação:** *to-do-list-delta-tawny.vercel.app*
 
-## React Compiler
+🔗 **Repositório:** https://github.com/thc0sta/to-do-list
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- ✅ Adicionar novas tarefas
+- ✅ Marcar tarefas como concluídas
+- ✅ Remover tarefas
+- ✅ Interface simples e responsiva
+- ✅ Atualização dinâmica utilizando React
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS3
+- HTML5
+
+---
+
+## ▶️ Como executar o projeto
+
+### Clone o repositório
+
+```bash
+git clone https://github.com/thc0sta/to-do-list.git
+```
+
+### Acesse a pasta do projeto
+
+```bash
+cd to-do-list
+```
+
+### Instale as dependências
+
+```bash
+npm install
+```
+
+### Execute o projeto
+
+```bash
+npm run dev
+```
+
+Depois, abra o navegador no endereço informado pelo Vite (geralmente `http://localhost:5173`).
+
+---
+
+## 📚 Objetivo
+
+Este projeto foi desenvolvido para praticar conceitos fundamentais do React, como:
+
+- Componentização
+- Gerenciamento de estado com `useState`
+- Renderização de listas
+- Manipulação de eventos
+- Organização de componentes
+- Estilização com CSS
+
+Além disso, faz parte do meu portfólio de desenvolvimento Front-end.
+
+---
+
+
+## 👨‍💻 Autor
+
+**Théo Costa**
+
+- GitHub: https://github.com/thc0sta
