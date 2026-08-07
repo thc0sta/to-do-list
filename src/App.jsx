@@ -3,6 +3,7 @@ import './App.css';
 import Todo from "./components/Todo";
 import TodoForm from './components/TodoForm';
 
+// componente principal da aplicação
 function App() {
     const [todos, setTodos] = useState([
       {
@@ -28,7 +29,7 @@ function App() {
     <h1>Lista de Tarefas</h1>
     <div className="todo-list">
       {todos.map((todo) => (
-        <Todo todo={todo} />
+        <Todo key={todo.id} todo={todo} />
 
       ))}
     </div>
