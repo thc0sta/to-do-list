@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: antiquewhite;
+  padding: 30px;
+  color: black;
+}
+
+.app {
+  max-width:  600px;
+  margin: 0 auto 300px;
+  background-color: aliceblue;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: blue;
+  color: #ddd;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: .8;
+  transition: .3;
+
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.complete {
+  background-color: green;
+}
+
+.remove {
+  background-color: red;
+}
+
+.todo-form {
+  padding-bottom: 1.5rem;
+
+}
+
+input, select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1x solid #ddd;
+  width: 100%;
+}
