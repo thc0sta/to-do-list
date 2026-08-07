@@ -4,7 +4,7 @@ Uma aplicação de lista de tarefas desenvolvida com **React** e **Vite**, permi
 
 ## 🚀 Demonstração
 
-🔗 **Aplicação:** *(adicione o link da Vercel após o deploy)*
+🔗 **Aplicação:** *to-do-list-delta-tawny.vercel.app*
 
 🔗 **Repositório:** https://github.com/thc0sta/to-do-list
 
