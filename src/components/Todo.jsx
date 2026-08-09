@@ -1,5 +1,6 @@
 import React from 'react'
 
+// componente que representa uma tarefa individual
  const Todo = ({todo}) => {
   return (
            <div className='todo'> 
