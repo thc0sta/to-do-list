@@ -1,16 +1,18 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: antiquewhite;
+  background-image:url('./img/fundo.png');
+  background-position: center;
+  background-size: cover;
   padding: 30px;
-  color: black;
+  color: hsl(234, 78%, 85%);
 }
 
 .app {
   max-width:  600px;
   margin: 0 auto 300px;
-  background-color: aliceblue;
+  background-color: #37187e;
   padding: 20px 30px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 h1 {
@@ -30,7 +32,7 @@ input {
 }
 
 button {
-  background-color: blue;
+  background-color: #6232A6;
   color: #ddd;
   padding: 5px 10px;
   margin-right: 10px;
@@ -53,9 +55,10 @@ button:hover {
 }
 
 .todo {
- background-color: pink;
+ background-color: #9D73D9;
   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   padding: 10px;
+  color: #100126;
   margin-bottom: 10px;
   border-radius: 5px;
   display: flex;
@@ -64,11 +67,11 @@ button:hover {
 }
 
 .complete {
-  background-color: green;
+  background-color: #2F1159;
 }
 
 .remove {
-  background-color: red;
+  background-color: #B2332D;
 }
 
 .todo-form {
@@ -101,7 +104,10 @@ input, select {
   flex: 1 1 0;
 }
 
+
+/* responsividade */
 @media (max-width: 600px) {
+  
   body {
     padding: 10px;
   }
@@ -115,18 +121,15 @@ input, select {
     font-size: 24px;
   }
 
-  /* Filtros ficam um abaixo do outro */
   .filter-options {
     flex-direction: column;
     gap: 10px;
   }
 
-  /* Tarefa no celular */
   .todo {
     gap: 10px;
   }
 
-  /* Botões menores */
   button {
     padding: 5px 8px;
     font-size: 12px;
@@ -138,7 +141,6 @@ input, select {
     padding: 5px 8px;
   }
 
-  /* Evita que textos grandes estourem a tela */
   .content {
     min-width: 0;
   }

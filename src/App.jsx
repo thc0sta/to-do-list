@@ -82,7 +82,6 @@ function App() {
       setSearch={setSearch} 
       />
 
-
       {/* responsável pelo filtro */}
       <Filter
         filter={filter}
@@ -90,6 +89,8 @@ function App() {
         sort={sort}
         setSort={setSort}
       />
+
+          <TodoForm addTodo={addTodo} />
 
       {/* lista de tarefas */}    
       <div className="todo-list">
@@ -114,7 +115,7 @@ function App() {
               ? a.createdAt - b.createdAt
               : b.createdAt - a.createdAt
           )
-
+          
           //percorre a lista e cria um componente Todo para cada tarefa
           .map((todo) => (
             <Todo
@@ -126,7 +127,7 @@ function App() {
           ))}
       </div>
           {/* Formulário responsável por adicionar novas tarefas */}
-      <TodoForm addTodo={addTodo} />
+  
     </div>
   );
 }
