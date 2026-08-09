@@ -7,27 +7,7 @@ import Filter from "./components/Filter";
 
 function App() {
   const [todos, setTodos] = useState([
-    {
-      id: 1,
-      text: "criar funcionalidade x no sistema",
-      category: "Trabalho",
-      isCompleted: false,
-      createdAt: 1,
-    },
-    {
-      id: 2,
-      text: "Ir pra academia",
-      category: "Pessoal",
-      isCompleted: false,
-      createdAt: 2,
-    },
-    {
-      id: 3,
-      text: "Estudar React",
-      category: "Estudos",
-      isCompleted: false,
-      createdAt: 3,
-    },
+    
   ]);
 
   const [search, setSearch] = useState(""); // estado que armazena o texto digitado na busca
@@ -90,7 +70,7 @@ function App() {
         setSort={setSort}
       />
 
-          <TodoForm addTodo={addTodo} />
+      <TodoForm addTodo={addTodo} />
 
       {/* lista de tarefas */}    
       <div className="todo-list">
