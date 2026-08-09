@@ -100,3 +100,50 @@ input, select {
 .filter-options div {
   flex: 1 1 0;
 }
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .app {
+    padding: 15px; 
+  
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Filtros ficam um abaixo do outro */
+  .filter-options {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Tarefa no celular */
+  .todo {
+    gap: 10px;
+  }
+
+  /* Botões menores */
+  button {
+    padding: 5px 8px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
+
+  .complete,
+  .remove {
+    padding: 5px 8px;
+  }
+
+  /* Evita que textos grandes estourem a tela */
+  .content {
+    min-width: 0;
+  }
+
+  .content p {
+    overflow-wrap: anywhere;
+  }
+}
