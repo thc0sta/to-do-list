@@ -10,6 +10,7 @@ import { useState } from 'react';
         if(!value || !category) return
         // adicionar todo
         addTodo(value, category)
+
         setValue("")
         setCategory("")
         // limpar os campos do formulário
