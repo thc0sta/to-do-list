@@ -1,7 +1,7 @@
 import React from 'react'
 
 // componente que representa uma tarefa individual
- const Todo = ({todo}) => {
+ const Todo = ({todo, removeTodo}) => {
   return (
            <div className='todo'> 
           <div className='content'>
@@ -10,7 +10,7 @@ import React from 'react'
         </div>
         <div>
           <button className='complete'>Completar</button>
-          <button className='remove'>x</button>
+          <button className='remove' onClick={() => removeTodo(todo.id)}>x</button>
         </div>
       </div>
   )
