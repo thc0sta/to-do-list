@@ -15,6 +15,7 @@ Uma aplicação de lista de tarefas desenvolvida com **React** e **Vite**, permi
 - ✅ Adicionar novas tarefas
 - ✅ Marcar tarefas como concluídas
 - ✅ Remover tarefas
+- ✅ Editar tarefas
 - ✅ Interface simples e responsiva
 - ✅ Atualização dinâmica utilizando React
 
