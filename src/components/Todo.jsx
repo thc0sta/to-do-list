@@ -1,5 +1,5 @@
 // componente que representa uma tarefa individual
-    const Todo = ({todo, removeTodo, completeTodo}) => {
+    const Todo = ({todo, removeTodo, completeTodo, setTodoToEdit}) => {
 
   return (
     <div className='todo' style={{textDecoration: todo.isCompleted ? 'line-through' : ''}}> 
@@ -11,9 +11,12 @@
 
 
           <div>
-            
+
             <button className='complete' onClick={() => completeTodo(todo.id)}>
              {todo.isCompleted ? 'Desfazer' : 'Completar'}
+            </button>
+                        
+            <button className="edit" onClick={() => setTodoToEdit(todo)}> Editar 
             </button>
             
            <button className='remove' onClick={() => removeTodo(todo.id)}>x            

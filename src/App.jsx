@@ -13,6 +13,7 @@ function App() {
   const [search, setSearch] = useState(""); // estado que armazena o texto digitado na busca
   const [filter, setFilter] = useState("all"); // estado que armazena o filtro selecionado
   const [sort, setSort] = useState("Asc"); // estado que controla a ordem das tarefas
+  const [todoToEdit, setTodoToEdit] = useState(null); // estado que controla a edição do todo
 
 
   //responsável por adicionar uma nova tarefa
@@ -46,10 +47,22 @@ function App() {
         ? { ...todo, isCompleted: !todo.isCompleted }
         : todo
     );
+      setTodos(newTodos);
 
-    setTodos(newTodos);
   };
   //acaba aqui
+
+  //responsável por editar uma tarefa
+  const updateTodo = (updatedTodo) => {
+  const newTodos = todos.map((todo) =>
+    todo.id === updatedTodo.id
+      ? updatedTodo
+      : todo
+  );
+
+  setTodos(newTodos);
+};
+//acaba aqui
 
 
 
@@ -70,7 +83,11 @@ function App() {
         setSort={setSort}
       />
 
-      <TodoForm addTodo={addTodo} />
+      <TodoForm 
+      addTodo={addTodo}
+    updateTodo={updateTodo}
+    todoToEdit={todoToEdit}
+    setTodoToEdit={setTodoToEdit}/>
 
       {/* lista de tarefas */}    
       <div className="todo-list">
@@ -103,6 +120,7 @@ function App() {
               todo={todo}
               removeTodo={removeTodo}
               completeTodo={completeTodo}
+              setTodoToEdit={setTodoToEdit}
             />
           ))}
       </div>
