@@ -3,7 +3,6 @@ body {
   background-image:url('/img/fundo.png');
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   padding: 30px;
   color: hsl(234, 78%, 85%);
 }
